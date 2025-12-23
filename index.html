@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Photography</title>
+    <title>Oma Bärbel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
@@ -17,11 +17,27 @@
             background-color: #df1811;
             font-family: Arial, Helvetica, sans-serif;
         }
+.fixed-header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; /* Abstand zwischen Text und Player */
+    z-index: 1000;
+}
 
+.site-text {
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    font-family: Helvetica, Arial, sans-serif;
+}
         /* Container für alle Bilder */
         .gallery {
             max-width: 700px;
-            margin: 0 auto;
+            margin: 50px auto;
             padding: 60px 20px;
         }
 
@@ -35,23 +51,35 @@
     </style>
 </head>
 <body>
+   <header class="fixed-header">
+    <div class="site-text">
+        wir trinken ramazotti auf oma baerbel
+    </div>
+
+    <div class="audio-player">
+        <audio controls>
+            <source src="music/Angus & Julia Stone - Heart Beats Slow (Live Acoustic).mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</header>
+    </div>
 
     <main class="gallery">
-        <img src="images/1.JPG" alt="">
-        <img src="images/2.JPG" alt="">
-        <img src="images/3.JPG" alt="">
-        <img src="images/4.JPG" alt="">
-        <img src="images/5.JPG" alt="">
-        <img src="images/6.JPG" alt="">
-        <img src="images/7.JPG" alt="">
-        <img src="images/8.JPG" alt="">
-        <img src="images/9.JPG" alt="">
-        <img src="images/10.JPG" alt="">
-        <img src="images/11.JPG" alt="">
-        <img src="images/12.JPG" alt="">
-        <img src="images/13.JPG" alt="">
-        <img src="images/14.JPG" alt="">
-        <img src="images/15.JPG" alt="">
+        <img src="images/Groß (1).jpeg" alt="">
+        <img src="images/Groß (2).jpeg" alt="">
+        <img src="images/Groß (3).jpeg" alt="">
+        <img src="images/Groß (4).jpeg" alt="">
+        <img src="images/Groß (5).jpeg" alt="">
+        <img src="images/Groß (6).jpeg" alt="">
+        <img src="images/Groß (7).jpeg" alt="">
+        <img src="images/Groß (8).jpeg" alt="">
+        <img src="images/Groß (9).jpeg" alt="">
+        <img src="images/Groß (10).jpeg" alt="">
+        <img src="images/Groß (11).jpeg">
+        <img src="images/Groß (12).jpeg">
+        <img src="images/Groß (13).jpeg" alt="">
+        <img src="images/Groß (14).jpeg" alt="">
+        <img src="images/Groß (15).jpeg" alt="">
     </main>
 
 </body>
